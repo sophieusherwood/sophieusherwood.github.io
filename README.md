@@ -1,2 +1,2 @@
 # Sophie Usherwood's Personal Website
-On my website I share my software engineering internship at Microsoft, my coding projects. I also described my other interests, including recording of my piano and flute performances, as well as a gallery of my advanced origami works.
+On my website I describe my software engineering internship at Microsoft and my coding projects. I also highlight my other interests, including recordings of my piano and flute performances and a gallery of my advanced origami works.

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="slideshow.js"></script>
+
+</head>
+<body>
+
+<!-- Horizontal menu -->
+<nav>
+    <a href="#home">Computer Science</a>
+    <a href="#flute_piano">Flute/Piano</a>
+    <a href="#origami">Origami</a>
+</nav>
+
+<!-- Home page content -->
+<div id="home">
+    <div style="text-align: center;">
+        <div style="display: inline-block;">
+
+            <!-- Slideshow container -->
+            <div style="text-align:center; padding-top: 30px">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture1.jpg" style="width:48%">
+                <div class="text">Trumbull College at Yale University</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture2.jpeg" style="width:35%">
+                <div class="text">Cross Campus at Yale University</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture3.jpeg" style="width:35%">
+                <div class="text">Sterling Memorial Library Corridor at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture4.jpeg" style="width:35%">
+                <div class="text">Trumbull College at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture5.jpeg" style="width:35%">
+                <div class="text">Schwarzman Center at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture6.jpeg" style="width:35%">
+                <div class="text">The main courtyard in Trumbull College at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture7.jpeg" style="width:35%">
+                <div class="text">Schwarzman Center Columns at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture8.jpeg" style="width:36.5%">
+                <div class="text">Entryway G in Trumbull College at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture9.jpeg" style="width:62%">
+                <div class="text">Grace Hopper College at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture10.jpeg" style="width:35%">
+                <div class="text">Archway in the main courtyard at Trumbull College at Yale University</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="slideshow_pictures/picture11.jpeg" style="width:35%">
+                <div class="text">Sterling Memorial Library Corridor at Yale University</div>
+                </div>
+
+                <div style="text-align:center">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <br>
+
+            <h1 style="text-align: center; font-size: 45px; font-family: 'Lobster', cursive;">Sophie Usherwood</h1>
+
+            <div style="text-align: center;">
+                <p style="margin: 5px 0;">Incoming Software Engineer @ Microsoft</p>
+                <p style="margin: 5px 0;">Computer Science @ Yale University</p>
+                <p style="margin: 5px 0;">Flutist and Pianist</p>
+                <p style="margin: 5px 0;">Origami Artist</p>
+                <p style="margin: 5px 0;">Dancer</p>
+            </div><br>
+        </div>
+    </div>
+
+    <!-- Resume items -->
+    <div class="resume-item">
+        <h2><u>WORK EXPERIENCE</u></h3><br>
+
+        <em>May 2024 - August 2024</em>
+        <p><strong>Microsoft</strong>, Software Engineering Intern, Cambridge, MA</p>
+        <ul>
+            <li>First member of the 80-member Docs team to leverage an SLM (small language model): created new workflow using Phi 3 in Augloop to generate prompt suggestions based on the page, followed RAI and privacy requirements</li>
+            <li>Sent requests to my workflow, parsed responses, stored responses locally, and displayed them in Copilot Chat</li>
+            <li>Implemented rules-based prompts (100% DogFood): empty page prompts and rotating prompts for non-empty page</li>
+            <li>Detected five different components on the page by fetching the HTML and inspecting the components, displayed prompts tailored to the present components which refresh when the Copilot Chat pane is opened</li>
+            <li>Implemented telemetry for model-generated and rules-based prompts to track submitted suggested prompts</li>
+            <li>Worked closely with privacy drivers, RAI experts, applied scientists, and the engineering team to follow best practices</li>
+        </ul><br>
+        
+        <em>June 2023 - August 2023</em>
+        <p><strong>Fidelity Investments</strong>, Software Engineering Intern (Mobile Engineer), Merrimack, NH</p>
+        <ul>
+            <li>Developed a markets widget in the flagship iOS mobile app to be used by over 5 million users</li>
+            <li>Worked from design spec to program markets widget using SwiftUI in XCode and integrated into large codebase</li>
+            <li>Implemented features including customization of stock data and rotation of different stock types using an intents file, following technology overview from WWDC</li>
+            <li>Won the monthly iOS Mobile Platform team award for outstanding technical contributions and teamwork skills</li>
+        </ul><br>
+
+        <em>September 2022 - May 2023</em>
+        <p><strong>Yale Computer Science Department</strong>, Research Assistant, New Haven, CT</p>
+        <ul>
+            <li>Created a simulation allowing the user to control the position of the end effector of a robotic arm with six degrees of
+                freedom with keyboard commands, using Rust, the Bevy Game engine, and the Optima library <a href="https://drive.google.com/file/d/1C1QgN1o3Kmv8YfIWqR8ZpGNNQgQXR0yA/view">(abstract)</a></li>
+            <li>Essential for partnership with Yale Hospital cardiac surgeon to enable use of multiple tools within millimeter precision</li>
+            <li>Presented poster at Yale Intercollegiate Symposium for ~100 undergrad researchers from ~22 leading universities <a href="https://drive.google.com/file/d/1ZJXQ0GMf7Nw_aCbI37SjCt_gaO1p4_eG/view">(poster)</a></li>
+        </ul><br>
+
+        <em>June 2022 - August 2022</em>
+        <p><strong>Dartmouth Economics Department</strong>, Data Analyst Research Assistant, Hanover, NH</p>
+        <ul>
+            <li>Identified a correlation between mortality and school closures in the 13-19 yr age group during the pandemic using R and Stata, from over 300,000 data points from the CDC</li>
+            <li>Developed a website in HTML for an economics experiment to encourage people to own instead of rent homes</li>
+        </ul><br>
+
+        <em>June 2021 - September 2021</em>
+        <p><strong>Yale Institute for Network Science</strong>, ML Research Assistant, New Haven, CT</p>
+        <ul>
+            <li>Utilized Python to automate waiting times to download >500,000 data points from CrowdTangle in 3 days before it closed</li>
+            <li>Worked in a team to create an ad-classifier machine learning model in TensorFlow, confirmed that e-cigarette posts in teenagers’ social media feeds were targeted advertising</li>
+        </ul>
+    </div><br>
+
+    <div class="resume-item">
+        <h2><u>PROJECTS</u></h2><br>
+
+        <em>June 2023</em>
+        <p><strong>AI Workout Mirror</strong>, iOS App Developer</p>
+        <ul>
+            <li>Developed an AI <a href="https://apps.apple.com/us/app/ai-workout-mirror/id6450634684">iOS App</a> using Swift which uses a machine learning model to overlay the user’s picture with a map of their joints, highlighting the body parts they are exercising during guided workouts (published on the Apple App Store)</li>
+            <li>Created the backend in Firebase to store user account information and weight data to track weight loss progress</li>
+        </ul><br>
+        
+        <em>May 2023</em>
+        <p><strong>PerfectTiming: Break Timer</strong>, iOS App Developer</p>
+        <ul>
+            <li>Developed an augmented reality <a href="https://apps.apple.com/us/app/perfecttiming-break-timer/id6449686020">iOS app</a> using Swift which prompts the user to start their next task with notifications, over 100 riddles, and pep talks, containing Google Admob ads and in-app purchases (published on the Apple App Store)</li>
+            <li>Tracks user timeliness, rewards them with successive augmented reality prizes, from food to yachts</li>
+        </ul><br>
+
+        <em>May 2022</em>
+        <p><strong>SafeMeal</strong>, iOS App Developer</p>
+        <ul>
+            <li>Developed an <a href="https://apps.apple.com/us/app/safemeal/id1581648670">iOS app</a> using React Native for people with food allergies (published on the Apple App Store)</li>
+            <li>Provides customized substitutions, tips, insights, and variety of recipes excluding most of the top food allergens</li>
+        </ul><br>
+    </div><br>
+
+    <div class="resume-item">
+        <p> <Strong>Contact info: </Strong> <a href="mailto:sophie.usherwood@yale.edu">Yale email</a>, <a href="mailto:seufolds6@gmail.com">personal email</a></p>
+    </div><br><br>
+
+</div>
+
+<!-- Flute/Piano page content -->
+<div id="flute_piano" style="display: none;">
+    <h1 style="text-align: center;">Flutist and Pianist</h1><br>
+
+    <div style="text-align: center;">
+        <div style="display: inline-block;">
+            <img src="flute.jpeg" alt="holding a flute" style="width: 34%; border-radius: 20px; vertical-align: top;">
+            <img src="piano.jpeg" alt="playing the flute" style="width: 34%; border-radius: 20px; vertical-align: top;">
+        </div><br><br><br>
+    </div>
+
+    <div style="padding-left: 250px; padding-right: 250px;">
+        <p>I have enjoyed developing my skills as a flutist and pianist ever since I was in early elementary school. Music has a special place in my life: it allows me to express a variety of emotions, appreciate beautiful patterns, and meet people from different backgrounds with a shared passion for music.</p>
+        
+        <p><u>Flute</u></p>
+        <ul>
+            <li>Yale Symphony Orchestra: selected as one of four flutists (selected for multiple piccolo solos)</li>
+            <li>New England Conservatory Preparatory School, Youth Philharmonic Orchestra: selected as one of three flutists in the premier orchestra in the program (selected for multiple solos)</li>
+        </ul>
+
+        <p><u>Piano</u></p>
+        <ul>
+            <li>Selected to perform at "The Next Generation" concerts in VT three times, performed at "Young Artists Series" in NH</li>
+            <li>Won a piano competition run by the Music Teachers National Association in VT</li>
+        </ul>
+    </div><br><br><br>
+
+    <div style="text-align: center;">
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/cMWVjtqeUfU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/h25Ri81lUno" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/EpBkJROw7_U" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/d8ED6Iygnko" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/Jl3HOqqlVmQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/QDlaZ1BgL_w" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/dEZpGCHCAoU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/mKV2jDfjk9o" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/h7cGXgTjy-U" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/V1aCy4QYOfU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="img-or-video-container">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/EYHMq6n-_os" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div><br>
+</div>
+
+<!-- Origami page content -->
+<div id="origami" style="display: none;">
+    <h1 style="text-align: center;">Origami Art</h1><br>
+
+    <p style="padding-left: 250px; padding-right: 250px;">I enjoy creating art using paper because it is rooted in geometry and creativity. I find it therapeutic and stimulating to make an object with just my hands and a piece of paper. To explore more of my origami art, see my origami blog, <a href="https://origamicreationsblog.wordpress.com/">The Origami Journals</a>.</p><br><br>
+
+    <div style="text-align: center;">
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>Square Sunflower Tessellation</u></h2>
+            <h3 style="text-align: center;">Winner of OrigamiUSA's OBC Competition, 2020</h3>
+            <img src="origami_pictures/sunflower.jpeg" alt="Square Sunflower" style="width: 40%; border-radius: 20px;">
+        </div>
+
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>The Lion King</u></h2>
+            <img src="origami_pictures/lion.jpeg" alt="The Lion King" style="width: 40%; border-radius: 20px;">
+        </div>
+
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>Ocean Wave and Goatfish</u></h2>
+            <h3 style="text-align: center;">Winner of OrigamiUSA's OBC Competition, 2019</h3>
+            <img src="origami_pictures/goatfish.jpeg" alt="Ocean Wave and Goatfish" style="width: 40%; border-radius: 20px;">
+        </div>
+
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>Roses and Leaves</u></h2>
+            <img src="origami_pictures/roses.jpeg" alt="Roses and Leaves" style="width: 40%; border-radius: 20px;">
+        </div>
+
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>Grizzly Bear</u></h2>
+            <img src="origami_pictures/bear.jpeg" alt="Grizzly Bear" style="width: 40%; border-radius: 20px;">
+        </div>
+
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>Helica Kusudama and Hummingbird</u></h2>
+            <h3 style="text-align: center;">Winner of OrigamiUSA's OBC Competition, 2016</h3>
+            <img src="origami_pictures/kusudama.jpeg" alt="Helica Kusudama and Hummingbird" style="width: 40%; border-radius: 20px;">
+        </div>
+
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>Sun, Moon, and Stars</u></h2>
+            <img src="origami_pictures/sun_moon.jpeg" alt="Sun, Moon, and Stars" style="width: 40%; border-radius: 20px;">
+        </div>
+
+        <div class="img-or-video-container">
+            <h2 style="text-align: center;"><u>Lily Box</u></h2>
+            <h3 style="text-align: center;">Winner of OrigamiUSA's OBC Competition, 2015</h3>
+            <img src="origami_pictures/lily_box.jpeg" alt="Lily Box" style="width: 40%; border-radius: 20px;">
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // JavaScript to handle menu navigation
+    document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('nav a');
+        var pages = document.querySelectorAll('div[id]');
+        links.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var targetId = this.getAttribute('href').substring(1);
+                pages.forEach(function(page) {
+                    if (page.id === targetId) {
+                        page.style.display = 'block';
+                    } else {
+                        page.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

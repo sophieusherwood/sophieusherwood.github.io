@@ -1,15 +1,19 @@
 let slideIndex = 1;
+let slideInterval;
 
 document.addEventListener('DOMContentLoaded', function() {
     showSlides(slideIndex);
+    startSlideShow();
 });
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  resetSlideShow();
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  resetSlideShow();
 }
 
 function showSlides(n) {
@@ -26,4 +30,15 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+function startSlideShow() {
+  slideInterval = setInterval(function() {
+    plusSlides(1);
+  }, 3000); // Change slide every 3 seconds
+}
+
+function resetSlideShow() {
+  clearInterval(slideInterval);
+  startSlideShow();
 }

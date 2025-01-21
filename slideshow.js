@@ -1,10 +1,10 @@
 let slideIndex = 1;
 let slideInterval;
 
-document.addEventListener('DOMContentLoaded', function() {
-    showSlides(slideIndex);
-    startSlideShow();
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     showSlides(slideIndex);
+//     startSlideShow();
+// });
 
 function plusSlides(n) {
   showSlides(slideIndex += n);

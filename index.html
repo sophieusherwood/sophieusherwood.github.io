@@ -39,7 +39,7 @@
             <h2><u>WORK EXPERIENCE</u></h3><br>
 
             <em>July 2025 - Present</em>
-            <p><strong>Microsoft</strong>, Software Engineer, Cambridge, MA</p>
+            <p><strong>Microsoft</strong>, Software Engineer, Cambridge, MA</p><br>
 
             <em>May 2024 - August 2024</em>
             <p><strong>Microsoft</strong>, Software Engineering Intern, Cambridge, MA</p>
@@ -115,27 +115,6 @@
         </div><br><br>
 
     </div>
-
-    <script>
-        // JavaScript to handle menu navigation
-        document.addEventListener('DOMContentLoaded', function() {
-            var links = document.querySelectorAll('nav a');
-            var pages = document.querySelectorAll('div[id]');
-            links.forEach(function(link) {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    var targetId = this.getAttribute('href').substring(1);
-                    pages.forEach(function(page) {
-                        if (page.id === targetId) {
-                            page.style.display = 'block';
-                        } else {
-                            page.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>
